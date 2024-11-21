@@ -6,7 +6,7 @@ export default function Hero() {
         <h1 className="hero-title">Nick Malzacher</h1>
         <h2 className="hero-subtitle">I like to build websites</h2>
         <p className="hero-description">
-          I am a web developer with a passion for creating and designing
+          I am a web developer & SEO Specialist with a passion for creating and designing
           engaging websites. I am currently studying at RMIT University. I am
           eager to expand my skills and make a difference in the web development
           industry.
