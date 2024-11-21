@@ -1,6 +1,7 @@
 /* Navbar Container */
 .navbar {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -41,4 +42,8 @@
 .navbar__button:hover {
   background-color: #4ade80; /* Green background on hover */
   color: #0f172a; /* Dark navy text */
+}
+
+body {
+  background: rgb(15,23,42);
 }
