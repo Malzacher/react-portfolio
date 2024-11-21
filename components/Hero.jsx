@@ -1,0 +1,20 @@
+export default function Hero() {
+  return (
+    <section className="hero">
+      <div className="hero-content">
+        <p className="hero-greeting">Hi, my name is</p>
+        <h1 className="hero-title">Nick Malzacher</h1>
+        <h2 className="hero-subtitle">I like to build websites</h2>
+        <p className="hero-description">
+          I am a web developer with a passion for creating and designing
+          engaging websites. I am currently studying at RMIT University. I am
+          eager to expand my skills and make a difference in the web development
+          industry.
+        </p>
+        <a href="#about" className="hero-button">
+          Learn more about me
+        </a>
+      </div>
+    </section>
+  );
+}

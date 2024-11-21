@@ -5,13 +5,13 @@ export default function Navigation() {
 
       <div className="navbar__links">
         <a href="#about" className="navbar__link">
-          01. About
+          [01 About]
         </a>
         <a href="#projects" className="navbar__link">
-          02. Projects
+          [02 Projects]
         </a>
         <a href="#contact" className="navbar__link">
-          03. Contact
+          [03 Contact]
         </a>
 
         <a

@@ -1,7 +1,6 @@
 /* Navbar Container */
 .navbar {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -46,4 +45,71 @@
 
 body {
   background: rgb(15,23,42);
+  display:block;
+  place-items: inherit;
+}
+
+/* General hero section styles */
+.hero {
+  background-color: #1b1b2f; /* Dark background */
+  color: #e4e4f2; /* Light text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  padding: 0 2rem; /* Add some horizontal padding */
+  text-align: center;
+}
+
+/* Container for the hero content */
+.hero-content {
+  max-width: 800px; /* Constrain the width */
+}
+
+/* Greeting text */
+.hero-greeting {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #a3a3b8;
+}
+
+/* Main title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #e4e4f2;
+  margin: 0.5rem 0;
+  opacity: 0.9;
+}
+
+/* Description paragraph */
+.hero-description {
+  font-size: 1rem;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+  color: #c1c1d1;
+}
+
+/* Call-to-action button */
+.hero-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1b1b2f;
+  background-color: #53f2c8; /* Button background */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #3bcaa1; /* Darker green on hover */
 }
