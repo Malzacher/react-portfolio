@@ -6,10 +6,10 @@ export default function Hero() {
         <h1 className="hero-title">Nick Malzacher</h1>
         <h2 className="hero-subtitle">I like to build websites</h2>
         <p className="hero-description">
-          I am a web developer & SEO Specialist with a passion for creating and designing
-          engaging websites. I am currently studying at RMIT University. I am
-          eager to expand my skills and make a difference in the web development
-          industry.
+          I am a web developer and SEO specialist with a passion for designing
+          engaging, high-performing websites. With experience across various
+          platforms, I am dedicated to creating innovative solutions that
+          deliver exceptional user experiences and impactful results.
         </p>
         <a href="#about" className="hero-button">
           Learn more about me

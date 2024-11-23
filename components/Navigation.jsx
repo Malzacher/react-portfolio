@@ -1,14 +1,35 @@
+import { useState, useEffect } from 'react';
+
 export default function Navigation() {
+  const fonts = [
+    'redaction-10',
+    'redaction-20',
+    'redaction-35',
+    'redaction-50',
+    'redaction-70',
+    'redaction-100',
+  ];
+
+  const [currentFontIndex, setCurrentFontIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentFontIndex((prevIndex) => (prevIndex + 1) % fonts.length);
+    }, 500);
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [fonts.length]);
+
   return (
     <nav className="navbar">
-      <div className="navbar__name">Nick Malzacher</div>
+      <div className={`navbar__name ${fonts[currentFontIndex]}`}>Nick Malzacher</div>
 
       <div className="navbar__links">
         <a href="#about" className="navbar__link">
           [01 About]
         </a>
         <a href="#projects" className="navbar__link">
-          [02 Projects]
+          [02 Explore Work]
         </a>
         <a href="#contact" className="navbar__link">
           [03 Contact]
