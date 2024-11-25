@@ -1,8 +1,8 @@
 import { useState } from "react";
-import WorkExperience from "./WorkExperience";
-import Portfolio from "./Portfolio";
-import Awards from "./Awards";
-import LiveWebBuilds from "./LiveWebBuilds";
+import WorkExperience from "./Experience/WorkExperience";
+import Portfolio from "./Experience/Portfolio";
+import Awards from "./Experience/Awards";
+import LiveWebBuilds from "./Experience/LiveWebBuilds";
 
 export default function Experience() {
   const [currentSection, setCurrentSection] = useState("Work Experience");
