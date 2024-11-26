@@ -455,3 +455,9 @@ img:hover {
   white-space: nowrap; /* Prevent text from wrapping */
   max-width: 100%; /* Ensure it doesn’t overflow on smaller screens */
 }
+
+@media (max-width: 380px) {
+  .navbar__button {
+    font-size: 10px;
+  }
+}
