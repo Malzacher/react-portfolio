@@ -33,7 +33,7 @@ export default function Navigation() {
         </a>
 
         <a
-          href="/Nicholas Malzacher CV.pdf.pdf"
+          href="/Nicholas-Malzacher-CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="navbar__button"
