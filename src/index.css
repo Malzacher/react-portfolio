@@ -66,3 +66,29 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.fa-caret-right {
+  color: var(--link-colour) !important;
+}
+
+.tech .left-tech,
+.tech .right-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Space between each row */
+}
+
+.tech .left-tech i,
+.tech .right-tech i {
+  margin-right: 8px; /* Space between the icon and the text */
+}
+
+.tech .left-tech div,
+.tech .right-tech div {
+  display: flex;
+  align-items: center; /* Vertically align the icon and text */
+}
+.tech {
+  display: flex;
+  gap: 20px; /* Space between the two columns */
+}

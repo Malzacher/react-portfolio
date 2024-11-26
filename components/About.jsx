@@ -17,14 +17,26 @@ export default function About() {
 
           <div className="tech">
             <div className="left-tech">
-              <i className="fa-solid fa-caret-right"></i> Javascript
-              <i className="fa-solid fa-caret-right"></i> React & Next
-              <i className="fa-solid fa-caret-right"></i> Wordpress
+              <div>
+                <i className="fa-solid fa-caret-right"></i> Javascript
+              </div>
+              <div>
+                <i className="fa-solid fa-caret-right"></i> React &amp; Next
+              </div>
+              <div>
+                <i className="fa-solid fa-caret-right"></i> Wordpress
+              </div>
             </div>
             <div className="right-tech">
-              <i className="fa-solid fa-caret-right"></i> Shopify
-              <i className="fa-solid fa-caret-right"></i> Woocommerce
-              <i className="fa-solid fa-caret-right"></i> PHP
+              <div>
+                <i className="fa-solid fa-caret-right"></i> Shopify
+              </div>
+              <div>
+                <i className="fa-solid fa-caret-right"></i> Woocommerce
+              </div>
+              <div>
+                <i className="fa-solid fa-caret-right"></i> PHP
+              </div>
             </div>
           </div>
         </div>
