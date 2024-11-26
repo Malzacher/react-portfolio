@@ -28,7 +28,7 @@ export default function Navigation() {
         <a href="#about" className="navbar__link">
           [01 About]
         </a>
-        <a href="#projects" className="navbar__link">
+        <a href="#buttons" className="navbar__link">
           [02 Explore Work]
         </a>
         <a href="#contact" className="navbar__link">

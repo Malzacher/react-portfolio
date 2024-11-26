@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+
 :root {
   --main-color: #CED7F3;
   --main-bg-color: #0D192D;
@@ -44,21 +47,21 @@
 }
 
 .navbar__link:hover {
-  color: #ffffff;
+  color: var(--link-colour);
 }
 
 .navbar__button {
   padding: 0.5rem 1rem;
-  border: 1px solid #4ade80;
+  border: 1px solid var(--link-colour);
   border-radius: 0.25rem;
   font-size: 14px;
-  color: #4ade80;
+  color: var(--link-colour);
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .navbar__button:hover {
-  background-color: #4ade80;
+  background-color: var(--link-colour);
   color: #0f172a;
 }
 
@@ -78,16 +81,21 @@
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 100px;
   font-weight: 700;
   margin: 0.5rem 0;
+  font-family: 'Poppins';
+  color: var(--link-colour);
+  font-weight: 800;
 }
 
 .hero-subtitle {
   font-size: 2.5rem;
   font-weight: 500;
   color: #e4e4f2;
-  margin: 0.5rem 0;
+  font-family: 'Poppins';
+  margin: 0;
+  font-weight: 800;
   opacity: 0.9;
 }
 
@@ -101,17 +109,17 @@
 .hero-button {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1b1b2f;
-  background-color: #53f2c8;
+  font-size: 14px;
+  color: var(--link-colour);
+  border: 1px solid var(--link-colour);
   border-radius: 5px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .hero-button:hover {
-  background-color: #3bcaa1;
+  background-color: var(--link-colour);
+  color: var(--main-bg-color)
 }
 
 /* Common Section Styles */
@@ -122,7 +130,8 @@
 
 #about {
   flex: 1;
-  padding-right: 2rem; /* To give space between the content and the image */
+  padding-right: 2rem;
+  /* To give space between the content and the image */
 }
 
 #about-container,
@@ -206,11 +215,13 @@ img:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Ensure items wrap on small screens */
+  flex-wrap: wrap;
+  /* Ensure items wrap on small screens */
 }
 
 /* Media Queries */
 @media (max-width: 1000px) {
+
   #hero-container,
   #about-container {
     margin-left: 10%;
@@ -307,10 +318,13 @@ img:hover {
   display: flex;
   flex-wrap: wrap;
   font-size: 14px;
+  padding: 20px 0px;
 }
 
 .experience-container div {
   flex: 1 1 50%;
+  align-content: center;
+
 }
 
 .experience-container .button {
@@ -318,21 +332,79 @@ img:hover {
 }
 
 .experience-container img {
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  max-height: 300px;
   object-fit: contain;
   box-shadow: none !important;
+  border-radius: 15px;
 }
 
 .experienceTitle {
-  color: #8A93AD;
+  color: var(--link-colour);
   font-family: 'Roboto Mono', monospace;
   font-size: 14px;
 }
 
 
-.content-section > div > h2 {
-  color: #8A93AD;
+.content-section>div>h2 {
+  color: var(--link-colour);
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
+}
+
+
+/* .experience-container a {
+  font-weight: 500;
+  color: #4cde80;
+  border: 1px solid #4cde80;
+  text-decoration: inherit;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+} */
+
+.experience-container a {
+  margin-right: 15px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+.buttons .navbar__button:hover {
+  cursor: pointer;
+}
+
+.hero-title {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0; /* Initially width is 0 to hide text */
+  animation: typing 2s steps(15) 1s forwards;
+}
+
+/* Typing effect */
+@keyframes typing {
+  to {
+    width: 100%; /* Expand width to show full text */
+  }
+}
+
+#experience-container {
+  padding: 60px 0px;
+}
+
+@media (max-width: 770px) {
+  #about, #overlay {
+    flex-basis: 100%
+  }
+  
+  #overlay {
+    display: none;
+  }
+  .experience-container div {
+    flex-basis: 100%;
+  }
 }

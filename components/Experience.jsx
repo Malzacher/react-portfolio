@@ -1,16 +1,13 @@
 import { useState } from "react";
-import WorkExperience from "./Experience/WorkExperience";
 import Portfolio from "./Experience/Portfolio";
 import Awards from "./Experience/Awards";
 import LiveWebBuilds from "./Experience/LiveWebBuilds";
 
 export default function Experience() {
-  const [currentSection, setCurrentSection] = useState("Work Experience");
+  const [currentSection, setCurrentSection] = useState("Portfolio");
 
   function renderContent() {
     switch (currentSection) {
-      case "Work Experience":
-        return <WorkExperience />;
       case "Portfolio":
         return <Portfolio />;
       case "Awards":
@@ -23,19 +20,26 @@ export default function Experience() {
   }
 
   return (
-    <div className="experience-container">
-      <div className="buttons">
-      <button onClick={() => setCurrentSection("Portfolio")}>
+    <div id="experience-container" className="experience-container">
+      <div id='buttons' className="buttons">
+        <a
+          className="navbar__button"
+          onClick={() => setCurrentSection("Portfolio")}
+        >
           Portfolio
-        </button>
-        <button onClick={() => setCurrentSection("Work Experience")}>
-          Work Experience
-        </button>
-       
-        <button onClick={() => setCurrentSection("Awards")}>Awards</button>
-        <button onClick={() => setCurrentSection("Live Web Builds")}>
+        </a>
+        <a
+          className="navbar__button"
+          onClick={() => setCurrentSection("Awards")}
+        >
+          Awards
+        </a>
+        <a
+          className="navbar__button"
+          onClick={() => setCurrentSection("Live Web Builds")}
+        >
           Live Web Builds
-        </button>
+        </a>
       </div>
       <div className="content-section">{renderContent()}</div>
     </div>
