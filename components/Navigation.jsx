@@ -38,7 +38,7 @@ export default function Navigation() {
           rel="noopener noreferrer"
           className="navbar__button"
         >
-          [03 Resume]
+          03 Resume
         </a>
       </div>
     </nav>
