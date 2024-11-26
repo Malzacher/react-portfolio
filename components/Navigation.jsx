@@ -15,7 +15,7 @@ export default function Navigation() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentFontIndex((prevIndex) => (prevIndex + 1) % fonts.length);
-    }, 500);
+    }, 300);
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [fonts.length]);

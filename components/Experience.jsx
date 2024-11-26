@@ -18,19 +18,20 @@ export default function Experience() {
       case "Live Web Builds":
         return <LiveWebBuilds />;
       default:
-        return <WorkExperience />;
+        return <Portfolio />;
     }
   }
 
   return (
     <div className="experience-container">
       <div className="buttons">
+      <button onClick={() => setCurrentSection("Portfolio")}>
+          Portfolio
+        </button>
         <button onClick={() => setCurrentSection("Work Experience")}>
           Work Experience
         </button>
-        <button onClick={() => setCurrentSection("Portfolio")}>
-          Portfolio
-        </button>
+       
         <button onClick={() => setCurrentSection("Awards")}>Awards</button>
         <button onClick={() => setCurrentSection("Live Web Builds")}>
           Live Web Builds
