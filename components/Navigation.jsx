@@ -31,9 +31,6 @@ export default function Navigation() {
         <a href="#buttons" className="navbar__link">
           [02 Explore Work]
         </a>
-        <a href="#contact" className="navbar__link">
-          [03 Contact]
-        </a>
 
         <a
           href="/resume.pdf"
@@ -41,7 +38,7 @@ export default function Navigation() {
           rel="noopener noreferrer"
           className="navbar__button"
         >
-          Resume
+          [03 Resume]
         </a>
       </div>
     </nav>

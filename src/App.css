@@ -124,7 +124,7 @@
 
 /* Common Section Styles */
 .wrapper {
-  max-width: 60%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -381,14 +381,16 @@ img:hover {
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
-  width: 0; /* Initially width is 0 to hide text */
+  width: 0;
+  /* Initially width is 0 to hide text */
   animation: typing 2s steps(15) 1s forwards;
 }
 
 /* Typing effect */
 @keyframes typing {
   to {
-    width: 100%; /* Expand width to show full text */
+    width: 100%;
+    /* Expand width to show full text */
   }
 }
 
@@ -397,14 +399,59 @@ img:hover {
 }
 
 @media (max-width: 770px) {
-  #about, #overlay {
+
+  #about,
+  #overlay {
     flex-basis: 100%
   }
-  
+
   #overlay {
     display: none;
   }
+
   .experience-container div {
     flex-basis: 100%;
   }
+
+  .experience-container.right {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 770px) {
+  .experience-container div {
+    flex-basis: 100%;
+  }
+
+  .experience-container.right {
+    flex-direction: column;
+  }
+
+  .experience-container.right>div:first-child {
+    order: 2;
+  }
+
+  .experience-container.right>div:last-child {
+    order: 1;
+  }
+
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .navbar__name {
+    display: none;
+  }
+}
+
+.navbar__button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--link-colour);
+  border-radius: 0.25rem;
+  font-size: 14px;
+  color: var(--link-colour);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Prevent text from wrapping */
+  max-width: 100%; /* Ensure it doesn’t overflow on smaller screens */
 }
